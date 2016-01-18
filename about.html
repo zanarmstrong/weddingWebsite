@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About - Business Casual - Start Bootstrap Theme</title>
+    <title>The Armkings</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +32,8 @@
 
 <body>
 
-    <div class="brand">Business Casual</div>
-    <div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
+    <div class="brand">Zan & Jonas</div>
+    <div class="address-bar">Getting Married: Midsummer 2016 in Mendocino, CA</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Business Casual</a>
+                <a class="navbar-brand" href="index.html">Zan & Jonas Get Hitched</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -56,7 +56,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">Our Story</a>
                     </li>
                     <li>
                         <a href="blog.html">Blog</a>
@@ -75,25 +75,67 @@
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">About
-                        <strong>business casual</strong>
-                    </h2>
-                    <hr>
+                <div class="col-lg-12">                
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>                            
+                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="0"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                            </div>                            
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-4.jpg" alt="">
+                            </div>                            
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-5.jpg" alt="">
+                            </div>                            
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-6.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
-                </div>
-                <div class="col-md-6">
-                    <p>This is a great place to introduce your company or project and describe what you do.</p>
-                    <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-                <div class="clearfix"></div>
             </div>
         </div>
 
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                        <h2 class="intro-text text-center"><strong>It all started on a bus...</strong>
+                        </h2>
+                    <hr>    
+                    <p><strong>In early 2008, Jonas and Zan met on the Google shuttle bus</strong>, which Mozilla used to share, and had one conversation.</p>
+                    <p>Fast-forward to 2011. <strong>Jonas recognizes Zan at the climbing gym</strong>, and says hi.</p>
+                    <p>Four days later, Zan thinks "<strong>that Jonas guy was pretty cute</strong>... wonder if I can find him". One Google Search and one Facebook search later, and Zan writes Jonas a message.</p>
+                    <p>Their first date started with <strong>a bike ride in the rain</strong> on the way to another climbing gym. For the second date <strong>they went in search of a waterfall</strong>...and ended up on an epic 12 hour date. The next few dates included going to see fire & circus, a treehouse, an amazing celloist, and a trip with friends to Yosemite. Who knew <strong>this was just the start of a life-long adventure</strong>?</p>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -143,7 +185,12 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 </body>
 
 </html>

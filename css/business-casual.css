@@ -183,6 +183,11 @@ footer p {
     }
 }
 
+.img-responsive {
+    display: inline;
+}
+
+
 @media screen and (min-width:1200px) {
     .box:after {
         content: '';
